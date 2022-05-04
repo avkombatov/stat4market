@@ -1,0 +1,76 @@
+.courses {
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__h1 {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 80px;
+        width: 870px;
+    }
+
+    &__span_color {
+        color: $color-3;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+    }
+
+    &__wallet {
+        width: 46px;
+        height: 46px;
+        margin-right: 20px;
+    }
+
+    &__price-p {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: rgba(51, 26, 47, 0.8);
+    }
+
+    &__price_color {
+        font-size: 35px;
+        color: $color-3;
+        margin-right: 7px;
+    }
+
+    &__desc {
+        margin-top: 20px;
+    }
+
+    &__desc-block {
+        margin-bottom: 15px;
+        width: 860px;
+        font-weight: 400;
+        font-size: $fontSize-p;
+        line-height: 160%;
+        color: $color-2;
+    }
+
+    &__right {
+        position: relative;
+    }
+
+    &__superman {
+        height: 550px;
+        width: 550px;
+        position: absolute;
+        right: 0px;
+        top: -375px;
+    }
+
+    &__superman-backg {
+        position: absolute;
+        right: -40px;
+        top: -352px;
+        opacity: 0.40;
+
+    }
+}

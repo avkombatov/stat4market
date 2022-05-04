@@ -1,0 +1,25 @@
+.crumbs {
+    margin-top: 75px;
+
+    &__ul {
+        display: flex;
+    }
+
+    &__dash {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    &__a,
+    &__dash {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(51, 26, 47, 0.5);
+    }
+
+    &__a:hover {
+        color: #6B626A;
+        transition: $transition;
+    }
+}

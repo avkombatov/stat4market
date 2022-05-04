@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    // transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.center {
+    padding-left: calc(50% - 765px);
+    padding-right: calc(50% - 765px);
+}
+.container{
+    position: relative;
+}
+.left-ellipse{
+    position: absolute;
+}

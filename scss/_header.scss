@@ -1,0 +1,134 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+        border-right: 1px solid #A398A2;
+        height: 80px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__logo-name {
+        font-weight: 700;
+        font-size: 31.8678px;
+        line-height: 39px;
+        letter-spacing: -0.01em;
+        color: #54618E;
+        margin-top: 5px;
+        margin-left: 13px;
+        padding-right: 19px;
+    }
+
+    &__four {
+        color: #D653D2;
+        font-size: 35px;
+    }
+
+    &__desc {
+        width: 185px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(51, 26, 47, 0.9);
+        padding-left: 25px;
+    }
+
+    &__arrow {
+        width: 12px;
+        height: 12px;
+
+    }
+
+    &__phone {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+    }
+
+    &__nav {
+        margin-left: 40px;
+    }
+
+    &__ul {
+        display: flex;
+    }
+
+    &__analitics {
+        margin-right: 11px;
+    }
+
+    &__ul li a {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        color: $color-1;
+
+    }
+
+    &__ul li a:hover {
+        color: $color-link;
+        fill: $color-link;
+        transition: $transition;
+    }
+
+    &__arrow {
+        margin-right: 50px;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+
+    &__enter {
+        height: 23px;
+        width: 23px;
+    }
+
+    &__tel {
+        display: flex;
+        align-items: center;
+        margin-right: 91px;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 169px;
+        height: 45px;
+        left: 1556px;
+        top: 53px;
+        background: #CF51CE;
+        border-radius: 12px;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 35px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+
+    &__button:hover {
+        background: $color-link;
+        transition: $transition;
+    }
+
+    &__enter {
+        margin-right: 20px;
+    }
+
+    &__number {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        color: $color-1;
+    }
+}
