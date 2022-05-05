@@ -1,0 +1,33 @@
+.history {
+    &__h2 {
+        @include h2_style;
+        text-align: center;
+        margin-bottom: 90px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+    }
+
+    &__p {
+        @include p_text;
+        width: 740px;
+    }
+
+    &__img {
+        &_margin-right {
+            margin-right: 80px;
+        }
+
+        &_margin-left {
+            margin-left: 80px;
+        }
+    }
+
+    &__bottom {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+    }
+}

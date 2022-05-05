@@ -4,3 +4,18 @@ $color-3: #CF51CE;
 $color-link: #9510D9;
 $transition: 0.3s;
 $fontSize-p: 25px;
+
+@mixin p_text {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 160%;
+    color: rgba(51, 26, 47, 0.8);
+}
+
+@mixin h2_style {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #331A2F;
+}

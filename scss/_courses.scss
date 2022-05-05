@@ -48,10 +48,7 @@
     &__desc-block {
         margin-bottom: 15px;
         width: 860px;
-        font-weight: 400;
-        font-size: $fontSize-p;
-        line-height: 160%;
-        color: $color-2;
+       @include p_text;
     }
 
     &__right {
