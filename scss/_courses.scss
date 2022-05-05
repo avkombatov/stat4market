@@ -3,6 +3,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
     }
 
     &__h1 {
@@ -48,7 +49,7 @@
     &__desc-block {
         margin-bottom: 15px;
         width: 860px;
-       @include p_text;
+        @include p_text;
     }
 
     &__right {
@@ -65,9 +66,14 @@
 
     &__superman-backg {
         position: absolute;
-        right: 0px;
+        right: 22px;
         top: -352px;
         opacity: 0.40;
+        width: 600px;
+    }
 
+    &__superman_hidden {
+        display: none;
+        position: absolute;
     }
 }

@@ -2,11 +2,13 @@
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
-&__menu-burger{
-    display: none;
-    width: 42px;
-    height: 28px;
-}
+
+    &__menu-burger {
+        display: none;
+        width: 42px;
+        height: 28px;
+    }
+
     &__left {
         display: flex;
         align-items: center;

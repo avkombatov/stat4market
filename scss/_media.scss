@@ -18,9 +18,40 @@
         padding-left: calc(50% - 700px);
         padding-right: calc(50% - 700px);
     }
+
+    .courses {
+        &__h1 {
+            font-size: 50px;
+        }
+
+        &__desc-block {
+            width: 800px;
+        }
+
+        &__superman {
+            height: 500px;
+            width: 500px;
+            right: 0px;
+            top: -370px;
+        }
+
+        &__superman-backg {
+            right: 0px;
+            top: -315px;
+            width: 500px;
+        }
+
+    }
 }
 
 @media screen and (max-width:1450px) {
+    @mixin p_text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        color: rgba(51, 26, 47, 0.8);
+    }
+
     .center {
         padding-left: calc(50% - 620px);
         padding-right: calc(50% - 620px);
@@ -69,6 +100,18 @@
         &__enter {
             width: 22px;
             height: 22px;
+        }
+    }
+
+    .courses {
+        &__h1 {
+            width: 720px;
+            font-size: 46px;
+        }
+
+        &__desc-block {
+            @include p_text;
+            width: 700px;
         }
     }
 }
@@ -131,6 +174,38 @@
             width: 20px;
             height: 20px;
         }
+    }
+
+    .courses {
+        &__superman {
+            height: 435px;
+            width: 435px;
+            right: -55px;
+        }
+
+        &__superman-backg {
+            width: 450px;
+            right: -70px;
+        }
+
+        &__right {
+            margin-top: 90px;
+        }
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .courses {
+        &__right {
+            display: none;
+        }
+
+        &__superman_hidden {
+            display: block;
+            top: 350px;
+            right: -120px;
+        }
+
     }
 }
 
@@ -216,6 +291,18 @@
     .crumbs {
         margin-top: 40px;
     }
+
+    .courses {
+        &__superman_hidden {
+            height: 400px;
+            width: 400px;
+            right: -165px;
+        }
+
+        &__desc-block {
+            width: 600px;
+        }
+    }
 }
 
 @media screen and (max-width:900px) {
@@ -235,6 +322,44 @@
             margin-left: 80px;
         }
     }
+
+    .courses {
+        &__desc-block {
+            width: 500px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .courses {
+        &__desc-block {
+            width: 500px;
+        }
+
+        &__superman_hidden {
+            width: 390px;
+            height: 390px;
+        }
+    }
+}
+
+@media screen and (max-width:750px) {
+    .courses {
+        &__h1 {
+            font-size: 40px;
+            line-height: 65px;
+        }
+
+        &__desc-block {
+            width: 410px;
+        }
+
+        &__superman_hidden {
+            width: 370px;
+            height: 370px;
+            top: 320px;
+        }
+    }
 }
 
 @media screen and (max-width:690px) {
@@ -250,6 +375,26 @@
 
         &__logo {
             border-right: none;
+        }
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    .courses {
+        &__h1 {
+            font-size: 30px;
+            line-height: 50px;
+            width: 500px;
+        }
+
+        &__desc-block {
+            width: 360px;
+        }
+
+        &__superman_hidden {
+            width: 330px;
+            height: 330px;
         }
     }
 }
@@ -281,6 +426,24 @@
     }
 }
 
+@media screen and (max-width:570px) {
+    .courses {
+        &__h1 {
+            font-size: 28px;
+            line-height: 45px;
+            width: 430px;
+        }
+
+        &__superman_hidden {
+            top: 185px;
+        }
+
+        &__desc-block {
+            font-size: 19px;
+        }
+    }
+}
+
 @media screen and (max-width:470px) {
     .header {
         &__right {
@@ -308,6 +471,27 @@
 
         &__logo-name {
             padding-right: 0px;
+        }
+    }
+
+    .courses {
+        &__h1 {
+            width: 230px;
+            font-size: 26px;
+            line-height: 35px;
+            margin-top: 44px;
+        }
+
+        &__superman_hidden {
+            width: 220px;
+            height: 220px;
+            right: -110px;
+            top: 163px;
+        }
+
+        &__desc-block {
+            font-size: 18px;
+            width: 330px;
         }
     }
 }
@@ -355,5 +539,11 @@
 
     .crumbs {
         margin-top: 40px;
+    }
+
+    .courses {
+        &__desc-block {
+            width: 300px;
+        }
     }
 }
