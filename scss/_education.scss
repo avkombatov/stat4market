@@ -1,0 +1,61 @@
+.education {
+    margin-top: 140px;
+
+    &__main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 80px;
+    }
+    &__four{
+        color:#EA5DBB;
+        font-size: 53px;
+    }
+
+    &__h2 {
+        @include h2_style;
+        position: relative;
+    }
+    &__line{
+        position: absolute;
+        top: 130px;
+        right: 416px;
+        width: 265px;
+    }
+
+    &__p {
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 160%;
+        text-align: center;
+        color: rgba(51, 26, 47, 0.8);
+    }
+
+    &__icon {
+        width: 70px;
+        height: 70px;
+        background: $color-3;
+        box-shadow: 0px 4px 25px rgba(234, 93, 187, 0.25);
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__svg {
+        height: 48px;
+        width: 48px;
+    }
+
+    &__h5 {
+        @include h5_style;
+        width: 280px;
+        margin-top: 30px;
+    }
+
+    &__desc {
+        @include p_small;
+        width: 290px;
+        margin-top: 10px;
+    }
+}

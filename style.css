@@ -25,6 +25,12 @@ ul li {
   position: absolute;
 }
 
+.right-ellips {
+  position: absolute;
+  right: 50px;
+  top: 380px;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -291,15 +297,19 @@ ul li {
   height: 550px;
   width: 550px;
   position: absolute;
-  right: 0px;
+  right: 65px;
   top: -375px;
 }
 
 .courses__superman-backg {
   position: absolute;
-  right: -40px;
+  right: 0px;
   top: -352px;
   opacity: 0.40;
+}
+
+.history {
+  margin-top: 140px;
 }
 
 .history__h2 {
@@ -345,5 +355,88 @@ ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.education {
+  margin-top: 140px;
+}
+
+.education__main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin-top: 80px;
+}
+
+.education__four {
+  color: #EA5DBB;
+  font-size: 53px;
+}
+
+.education__h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #331A2F;
+  position: relative;
+}
+
+.education__line {
+  position: absolute;
+  top: 130px;
+  right: 416px;
+  width: 265px;
+}
+
+.education__p {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 160%;
+  text-align: center;
+  color: rgba(51, 26, 47, 0.8);
+}
+
+.education__icon {
+  width: 70px;
+  height: 70px;
+  background: #CF51CE;
+  -webkit-box-shadow: 0px 4px 25px rgba(234, 93, 187, 0.25);
+          box-shadow: 0px 4px 25px rgba(234, 93, 187, 0.25);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.education__svg {
+  height: 48px;
+  width: 48px;
+}
+
+.education__h5 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  color: #331A2F;
+  width: 280px;
+  margin-top: 30px;
+}
+
+.education__desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: rgba(51, 26, 47, 0.8);
+  width: 290px;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */
