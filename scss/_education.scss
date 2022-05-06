@@ -10,19 +10,27 @@
         color:#EA5DBB;
         font-size: 53px;
     }
-
+    &__block-h2,
+    &__block-p{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+ 
     &__h2 {
         @include h2_style;
         position: relative;
+        width: 720px;
     }
     &__line{
         position: absolute;
         top: 130px;
-        right: 416px;
+        right: 10px;
         width: 265px;
     }
 
     &__p {
+        width: 846px;
         margin-top: 30px;
         font-weight: 400;
         font-size: 25px;

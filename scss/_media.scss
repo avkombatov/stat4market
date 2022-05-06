@@ -7,6 +7,8 @@
         padding-left: calc(50% - 740px);
         padding-right: calc(50% - 740px);
     }
+
+
 }
 
 @media screen and (max-width:1600px) {
@@ -42,6 +44,7 @@
         }
 
     }
+
 }
 
 @media screen and (max-width:1450px) {
@@ -114,6 +117,7 @@
             width: 700px;
         }
     }
+
 }
 
 @media screen and (max-width:1390px) {
@@ -130,6 +134,21 @@
 }
 
 @media screen and (max-width:1280px) {
+    @mixin p_text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        color: rgba(51, 26, 47, 0.8);
+    }
+
+    @mixin h2_style {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 64px;
+        text-align: center;
+        color: $color-1;
+    }
+
     .center {
         padding-left: calc(50% - 550px);
         padding-right: calc(50% - 550px);
@@ -207,21 +226,6 @@
     }
 
     .history {
-        @mixin p_text {
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 160%;
-            color: rgba(51, 26, 47, 0.8);
-        }
-
-        @mixin h2_style {
-            font-weight: 700;
-            font-size: 40px;
-            line-height: 64px;
-            text-align: center;
-            color: $color-1;
-        }
-
         &__h2 {
             @include h2_style;
         }
@@ -233,6 +237,41 @@
         &__img {
             width: 350px;
             height: 350px;
+        }
+    }
+
+    .education {
+        &__h5 {
+            font-size: 19px;
+            width: 210px;
+        }
+
+        &__desc {
+            width: 225px;
+            font-size: 16px;
+        }
+
+        &__icon {
+            width: 60px;
+            height: 60px;
+        }
+
+        &__svg {
+            width: 35px;
+            height: 35px;
+        }
+
+        &__h2 {
+            @include h2_style;
+        }
+
+        &__line {
+            right: 63px;
+            width: 231px;
+        }
+
+        &__p {
+            font-size: 20px;
         }
     }
 }
@@ -317,6 +356,9 @@
             width: 600px;
         }
     }
+    .education{
+        margin-top: 100px;
+    }
 
 }
 
@@ -371,6 +413,22 @@
             height: 320px;
         }
     }
+
+    .education {
+        &__main {
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            grid-row-gap: 40px;
+        }
+
+        &__h5 {
+            width: 275px;
+        }
+
+        &__desc {
+            width: 300px;
+        }
+    }
 }
 
 @media screen and (max-width:900px) {
@@ -396,19 +454,28 @@
             width: 500px;
         }
     }
-    .history{
-        &__p{
+
+    .history {
+        &__p {
             width: 400px;
         }
-        &__img{
+
+        &__img {
             width: 280px;
             height: 280px;
         }
-        &__img_margin-left{
+
+        &__img_margin-left {
             margin-left: 25px;
         }
-        &__img_margin-right{
+
+        &__img_margin-right {
             margin-right: 25px;
+        }
+    }
+    .education{
+        &__line{
+            right: 43px;
         }
     }
 }
@@ -423,6 +490,15 @@
             width: 390px;
             height: 390px;
         }
+    }
+
+    .education {
+
+        &__desc,
+        &__h5 {
+            width: 255px;
+        }
+
     }
 }
 
@@ -443,23 +519,28 @@
             top: 320px;
         }
     }
-    .history{
+
+    .history {
         margin-top: 50px;
-        &__top{
-            flex-direction: column; 
+
+        &__top {
+            flex-direction: column;
         }
-        &__bottom{
+
+        &__bottom {
             flex-direction: column-reverse;
         }
-        &__p{
+
+        &__p {
             width: 500px;
             margin-top: 15px;
         }
-        &__h2{
+
+        &__h2 {
             font-size: 32px;
             line-height: 45px;
         }
-       
+
     }
 }
 
@@ -476,6 +557,25 @@
 
         &__logo {
             border-right: none;
+        }
+    }
+    .education{
+        margin-top: 80px;
+        &__line{
+            right: 110px;
+            width: 181px;
+            top: 140px;
+        }
+        &__main{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__h2{
+            font-size: 30px;
+            width: 400px;
+            line-height: 45px;
+        }
+        &__four{
+            font-size: 40px;
         }
     }
 
@@ -525,6 +625,7 @@
             margin-left: 20px;
         }
     }
+
     .courses {
         &__h1 {
             font-size: 28px;
@@ -542,12 +643,13 @@
     }
 }
 
-@media screen and (max-width:540px){
-    .history{
-        &__p{
+@media screen and (max-width:540px) {
+    .history {
+        &__p {
             width: 420px;
         }
-        &__h2{
+
+        &__h2 {
             font-size: 28px;
             line-height: 40px;
         }
@@ -604,20 +706,43 @@
             width: 330px;
         }
     }
-    .history{
-        &__h2{
+
+    .history {
+        &__h2 {
             font-size: 24px;
             line-height: 35px;
         }
-        &__img{
+
+        &__img {
             width: 268px;
             height: 268px;
         }
-        &__p{
+
+        &__p {
             width: 350px;
         }
     }
+    .education{
+        &__h2{
+            font-size: 24px;
+            width: 300px;
+            line-height: 35px;
+        
+        }
+        &__line{
+            right: 77px;
+            width: 145px;
+            top: 107px;
+        }
+        &__four{
+            font-size: 30px;
+        }
+        &__p{
+            font-size: 18px;
+        }
+    }
 }
+
 
 @media screen and (max-width:375px) {
     .center {
@@ -669,8 +794,9 @@
             width: 300px;
         }
     }
-    .history{
-        &__p{
+
+    .history {
+        &__p {
             width: 300px;
         }
     }

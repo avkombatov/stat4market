@@ -391,6 +391,16 @@ ul li {
   font-size: 53px;
 }
 
+.education__block-h2, .education__block-p {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .education__h2 {
   font-weight: 700;
   font-size: 48px;
@@ -398,16 +408,18 @@ ul li {
   text-align: center;
   color: #331A2F;
   position: relative;
+  width: 720px;
 }
 
 .education__line {
   position: absolute;
   top: 130px;
-  right: 416px;
+  right: 10px;
   width: 265px;
 }
 
 .education__p {
+  width: 846px;
   margin-top: 30px;
   font-weight: 400;
   font-size: 25px;
@@ -632,6 +644,36 @@ ul li {
     width: 350px;
     height: 350px;
   }
+  .education__h5 {
+    font-size: 19px;
+    width: 210px;
+  }
+  .education__desc {
+    width: 225px;
+    font-size: 16px;
+  }
+  .education__icon {
+    width: 60px;
+    height: 60px;
+  }
+  .education__svg {
+    width: 35px;
+    height: 35px;
+  }
+  .education__h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 64px;
+    text-align: center;
+    color: #331A2F;
+  }
+  .education__line {
+    right: 63px;
+    width: 231px;
+  }
+  .education__p {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 1250px) {
@@ -692,6 +734,9 @@ ul li {
   .history__p {
     width: 600px;
   }
+  .education {
+    margin-top: 100px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -729,6 +774,18 @@ ul li {
     width: 320px;
     height: 320px;
   }
+  .education__main {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-row-gap: 40px;
+  }
+  .education__h5 {
+    width: 275px;
+  }
+  .education__desc {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -758,6 +815,9 @@ ul li {
   .history__img_margin-right {
     margin-right: 25px;
   }
+  .education__line {
+    right: 43px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -767,6 +827,9 @@ ul li {
   .courses__superman_hidden {
     width: 390px;
     height: 390px;
+  }
+  .education__desc, .education__h5 {
+    width: 255px;
   }
 }
 
@@ -818,6 +881,26 @@ ul li {
   }
   .header__logo {
     border-right: none;
+  }
+  .education {
+    margin-top: 80px;
+  }
+  .education__line {
+    right: 110px;
+    width: 181px;
+    top: 140px;
+  }
+  .education__main {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .education__h2 {
+    font-size: 30px;
+    width: 400px;
+    line-height: 45px;
+  }
+  .education__four {
+    font-size: 40px;
   }
 }
 
@@ -927,6 +1010,22 @@ ul li {
   }
   .history__p {
     width: 350px;
+  }
+  .education__h2 {
+    font-size: 24px;
+    width: 300px;
+    line-height: 35px;
+  }
+  .education__line {
+    right: 77px;
+    width: 145px;
+    top: 107px;
+  }
+  .education__four {
+    font-size: 30px;
+  }
+  .education__p {
+    font-size: 18px;
   }
 }
 
